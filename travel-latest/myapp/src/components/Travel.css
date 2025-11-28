@@ -1,0 +1,217 @@
+/* ============================
+   ✅ TOP BANNER
+   ============================ */
+.header-banner {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid #ff9900;
+}
+
+.travel-header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.9);
+  transition: transform 1.2s ease;
+}
+
+.header-banner:hover .travel-header-image {
+  transform: scale(1.05);
+}
+
+/* Header Overlay */
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.header-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 768px) {
+  .header-banner {
+    height: 200px;
+  }
+  .header-title {
+    font-size: 22px;
+  }
+}
+
+/* ============================
+   ✅ NAVBAR
+   ============================ */
+.travel-navbar {
+  background-color: #0c0f13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.travel-navbar.scrolled {
+  background-color: #0c0f13e8;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.brand-title {
+  color: #ff9900;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff9900;
+}
+
+/* ============================
+   ✅ PROFILE ICON + DROPDOWN
+   ============================ */
+
+.profile-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff9900;
+  transition: 0.2s ease;
+}
+
+.profile-icon img:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown box (hidden by default – React controls visibility) */
+.dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 200px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 0;
+  z-index: 2000;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  padding: 12px 18px;
+  font-size: 15px;
+  color: #222;
+  transition: 0.25s ease;
+}
+
+.dropdown ul li:hover {
+  background: #ff9900;
+  color: white;
+  cursor: pointer;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* REMOVE THIS — OLD HOVER DROPDOWN (now disabled)
+--------------------------------------------------
+.profile-container:hover .dropdown {
+  display: block;
+}
+-------------------------------------------------- */
+
+/* ============================
+   ✅ BOOKING TABS
+   ============================ */
+.booking-card {
+  display: flex;
+  gap: 15px;
+  padding: 15px 20px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+.tab-item {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #f9f9f9;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-item:hover {
+  background: #f3f3f3;
+}
+
+.tab-item.active {
+  background: #ff9900;
+  color: #fff;
+}
+
+/* ============================
+   GENERAL SECTION
+   ============================ */
+.section {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}

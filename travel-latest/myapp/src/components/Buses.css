@@ -1,0 +1,100 @@
+.buses-section {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f9ff;
+}
+
+/* Center box */
+.bus-search-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* Form layout */
+.search-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.row.single {
+  justify-content: center;
+}
+
+.row.single input {
+  width: 48%;
+}
+
+/* Buttons */
+.search-btn {
+  width: 100%;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #005bcc;
+}
+
+/* Live Track Button */
+.live-track-btn {
+  width: 100%;
+  background-color: #ff9100;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.live-track-btn:hover {
+  background-color: #e87b00;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row.single input {
+    width: 100%;
+  }
+}

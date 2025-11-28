@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Ensure no extra space appears after hiding translate banner */
+  top: 0 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ✅ Hide Google Translate default top banner */
+iframe.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* ✅ Hide the grey strip placeholder Google adds */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* ✅ Remove the blank bar it pushes down */
+body > .skiptranslate {
+  display: none !important;
+}
+
+/* ✅ Hide Google tooltip bubble */
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+/* ✅ Hide default Google translate gadget if used */
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* ✅ Prevent page shifting */
+html, body {
+  height: 100%;
+  position: relative;
+}

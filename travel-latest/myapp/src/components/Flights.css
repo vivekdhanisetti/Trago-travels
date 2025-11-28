@@ -1,0 +1,329 @@
+.flights-section {
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f9ff;
+}
+
+/* Centered Search Box */
+.flight-search-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.search-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row input,
+.row select {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.row.single {
+  justify-content: center;
+}
+
+.row.single select {
+  width: 48%;
+}
+
+/* Search Button */
+.search-btn {
+  width: 100%;
+  background-color: #ff9900; /* Orange */
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+.search-btn:hover {
+  background-color: #ff7b00; /* Darker Orange */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(255, 153, 0, 0.4);
+}
+
+/* 🌍 Currency Converter Card */
+.currency-card {
+  max-width: 420px;
+  width: 100%;
+  background: #ffffff;
+  padding: 24px;
+  margin: 30px auto 60px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.currency-card:hover {
+  transform: scale(.02);
+  transform: scale(1.02);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.currency-card h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0077ff;
+}
+
+.currency-input label, .currency-select label {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.currency-input input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #f8fbff;
+}
+
+.currency-input input:focus,
+.currency-select select:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.4);
+  background-color: #fff;
+}
+
+.currency-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.currency-select select {
+  padding: 12px;
+  width: 150px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.swap-btn {
+  font-size: 22px;
+  padding: 6px 12px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: #f8f8f8;
+  transition: .2s;
+}
+
+.swap-btn:hover {
+  background: #e6e6e6;
+}
+
+.result-box {
+  background: #f3f4f6;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.result-value {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.rate-info {
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.convert-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: .2s;
+}
+
+.convert-btn:hover {
+  background: #1e4ed8;
+}
+
+/* ✨ Offers Section */
+/* ✨ Offers Section */
+.offers-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.offers-title {
+  color: #0077ff;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.offers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+/* Each offer card */
+.offer-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.offer-card h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+  min-height: 45px; /* keeps headings same height for alignment */
+}
+
+.offer-btn {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+  background-color: #005bcc;
+}
+
+.offer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .offer-card {
+    width: 90%;
+  }
+}
+
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.offer-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer-btn {
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+  background-color: #005bcc;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .offers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-card {
+    width: 90%;
+  }
+
+  .currency-card {
+    max-width: 95%;
+  }
+}

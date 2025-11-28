@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+/* 🌐 Translator Icon Container */
+.translate-icon-container {
+  position: fixed;
+  top: 15px;
+  right: 2px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* 🌍 Translator Button */
+.translate-button {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 🚫 Remove highlight / outline / focus */
+.translate-button,
+.translate-button:hover,
+.translate-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  background: linear-gradient(135deg, #0078ff, #00c6ff) !important;
+  color: #fff !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* 📌 Dropdown Box */
+.translate-box {
+  background: #fff;
+  padding: 8px 0;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 160px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  z-index: 99999;
+  animation: fadeIn 0.25s ease-in-out;
+  user-select: none; /* prevent text highlight */
+}
+
+/* 🔠 Dropdown Items */
+.translate-box p {
+  margin: 0;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  color: #333;
+  user-select: none;
+}
+
+.translate-box p:hover {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: white;
+}
+
+/* Hide dropdown when needed */
+.translate-box.hide {
+  display: none;
+}
+
+/* ✨ Smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🧠 App Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* ✅ Hide Google Translate top bar */
+.goog-te-banner-frame {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+/* ✅ Prevent Google Translate layout shift */
+body {
+  top: 0 !important;
+  position: relative;
+}
+
+/* ✅ Hide Google branding & unwanted text */
+.goog-logo-link,
+.goog-te-gadget span,
+.skiptranslate {
+  display: none !important;
+}
+
+/* ✅ Hide default Google Translate dropdown */
+#google_translate_element {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* ✅ Ensure layout integrity */
+html body {
+  position: static !important;
+}
+
+/* 💬 Chatbot Icon (bottom-right corner) */
+.chat-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: linear-gradient(135deg, #ff7b00, #ff3d00);
+  color: #fff;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* 💬 Chat Popup Box */
+.chat-popup {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.25s ease-in-out;
+}

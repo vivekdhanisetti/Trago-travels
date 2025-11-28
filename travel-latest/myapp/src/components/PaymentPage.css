@@ -1,0 +1,232 @@
+.payment-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #f9fbff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Title style */
+h2 {
+  color: #0b3d91;
+  margin-bottom: 15px;
+}
+
+/* ✅ Card Style */
+.summary-card,
+.payment-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  min-width: 320px;
+  text-align: left;
+}
+
+.summary-card h2,
+.payment-card h2 {
+  color: #0077ff;
+}
+
+/* Payment Method Buttons */
+.method {
+  background: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.method:hover {
+  background: #e6e6e6;
+}
+
+.method.active {
+  background: #e0edff;
+  border-left: 4px solid #0077ff;
+}
+
+/* ✅ UPI App Icons */
+.upi-apps {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.upi-option {
+  text-align: center;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 0.25s;
+  border: 2px solid transparent;
+}
+
+.upi-option.selected {
+  border-color: #6c2bd9;
+  background: #f3e8ff;
+}
+
+.upi-option img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+select {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.card-box .row {
+  display: flex;
+  gap: 10px;
+}
+
+/* ✅ Pay Button */
+.pay-btn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+}
+
+/* ✅ OTP Screen */
+.otp-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.otp-screen h2 {
+  color: #0b3d91;
+  margin-bottom: 20px;
+}
+
+.otp-input {
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #0077ff;
+}
+
+.otp-screen button {
+  background: #0077ff;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.otp-screen button:hover {
+  background: #005fcc;
+}
+
+/* ✅ Payment Success Screen */
+.payment-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-family: "Poppins", sans-serif;
+}
+
+.payment-success h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.payment-success button {
+  background: #ff9800;
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.payment-success button:hover {
+  background: #e68900;
+}
+
+/* ✅ ✈ Payment Animation Screen */
+.payment-animation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #eaf7ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.plane {
+  font-size: 80px;
+  animation: fly 2.5s ease-in-out forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-200px) translateY(50px) rotate(-20deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px) translateY(-50px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+.payment-animation-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0b3d91;
+  font-weight: 600;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .summary-card,
+  .payment-card {
+    width: 90%;
+  }
+}

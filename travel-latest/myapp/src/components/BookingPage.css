@@ -1,0 +1,222 @@
+/* Main Container */
+.booking-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #004aad;
+}
+
+/* Flight Summary Card */
+.flight-summary-card {
+  background: #e8f1ff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c8ddff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Layout */
+.booking-wrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.left-section {
+  flex: 1.5;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Buttons */
+.add-btn {
+  background-color: #ff7b00 !important;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.add-btn:hover {
+  background-color: #e66d00 !important;
+}
+
+/* Traveller Form */
+.traveller-form {
+  background: #f6f6fb;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid #d6d6f7;
+}
+
+/* ✅ For side-by-side input rows */
+.row.two-column {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.row.two-column input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 14px;
+}
+
+.field-with-error {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Normal rows */
+.row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 14px;
+}
+
+/* Gender Row */
+.gender-row label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Buttons */
+.save-btn,
+.continue-btn {
+  width: 100%;
+  background-color: #ff7b00 !important;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.save-btn:hover,
+.continue-btn:hover {
+  background-color: #e66d00 !important;
+}
+
+/* Review Card */
+.review-card {
+  background: #eef3ff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.review-item {
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.edit-btn {
+  background-color: #ffb300;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.confirm-btn {
+  background-color: #00b971;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Summary Boxes */
+.summary-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #d6d6f7;
+  margin-bottom: 15px;
+}
+.summary-box p {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.price-box {
+  text-align: center;
+  background: #004aad;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+}
+.price-box h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff7b00 !important;
+}
+
+/* Error & Success Messages */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.success {
+  color: green;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .booking-wrapper {
+    flex-direction: column;
+  }
+
+  .row.two-column {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
